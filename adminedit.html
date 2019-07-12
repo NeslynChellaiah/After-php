@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	 <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+			  <script src="adminedit1.js"></script>
+</head>
+<body>
+	<form id="adminedit">
+		<div class="form-group" align="pull-right" width="50">
+			<label for="age">Age:</label>
+			<input type="number" min="18" max="99" required="required" id="age">
+		</div>
+		<div class="form-group">
+			<label for="dob">Dob:</label>
+			<input type="date" required="required" id="dob">			
+		</div>
+		<div class="form-group">
+			<label for="contact">Contact:</label>
+			<input type="text" required="required" pattern="[6-9]{1}[0-9]{9}" maxlength="10" id="contact">
+		</div>
+		<input type="submit" class="btn btn-success" id="upbtn" value="Submit">
+	</form>
+	<script src="adminedit.js"></script>
+</body>
+</html>

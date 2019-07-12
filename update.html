@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Update page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	 <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+	<script src="update1.js"></script>
+</head>
+<body>
+	<form id="updatepage">
+		<div class="form-group">
+			<label for="age">Age:</label>
+			<input type="number" min="18" max="99" required="required" id="age">
+		</div>
+		<div class="form-group">
+			<label for="dob">Dob:</label>
+			<input type="date" required="required" id="dob">			
+		</div>
+		<div class="form-group">
+			<label for="contact">Contact:</label>
+			<input type="text" required="required" pattern="[6-9]{1}[0-9]{9}" maxlength="10" id="contact">
+		</div>
+		<button class="btn btn-success" id="upbtn">Update</button>
+		</form>
+		<div class="fixed-bottom">
+		<button class="btn pull-right btn btn-danger" id="logoutbtn">Log out</button>
+		</div>
+
+	<script src="update.js"></script>
+	<script src="logout.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	 <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+    <script src="signup1.js"></script>
+	<title>sign up</title>
+  <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+<center>
+ <form id="h" align="right">
+  <div class="col-sm">
+    <label for="email">Email-id:</label>
+    <input type="email" required="required"  width="48" id="email"/>
+    </div>
+    <div>
+    <label for="uname">Username:</label>
+    <input type="text" required="required" id="uname">
+  </div>
+  <div class="col-sm">
+    <label for="pass">Password:</label>
+    <input type="password" required="required" id="pass" minlength="8" maxlength="15" placeholder="8-15 characters" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"><br>
+    <span class="col-sm">Atleast 1 special character,1 number,1 lowercase letter,1  uppercase letter</span>
+  </div>
+  <div class="col-sm">
+    <label for="cpwd">Confirm Password:</label>
+    <input type="password" required="required" id="cpwd" minlength="8" maxlength="15">
+  </div>
+  <input type="Submit" class="btn btn-success" value="Sign up" id="signupbtn">
+</form>
+</center>
+	<script src="signup.js">
+	</script>
+  
+
+
+</body>
+</html> 
